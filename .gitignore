@@ -1,0 +1,6 @@
+dist
+build
+MANIFEST
+*.egg-info
+setup.cfg
+.DS_Store*
