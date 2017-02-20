@@ -14,7 +14,7 @@ else:
 
 setup(
     name='matcher',
-    version='0.1',
+    version='0.2',
     description=description,
     long_description=long_description,
     url='https://github.com/afrieder/matcher',
@@ -37,5 +37,9 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords=['case', 'pattern', 'matching', 'functional', 'typesafe'],
-    packages=['matcher']
+    py_modules = ['matcher'],
+    entry_points='''
+        [console_scripts]
+        matcher=matcher:matcher
+    ''',
 )
